@@ -5805,11 +5805,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\YOUTUBE\\projects\\Repo\\Repo.csproj",
+      "projectUniqueName": "E:\\YOUTUBE\\projects\\Repo\\Repositortypattern-and-AJAx\\Repo.csproj",
       "projectName": "Repo",
-      "projectPath": "E:\\YOUTUBE\\projects\\Repo\\Repo.csproj",
+      "projectPath": "E:\\YOUTUBE\\projects\\Repo\\Repositortypattern-and-AJAx\\Repo.csproj",
       "packagesPath": "C:\\Users\\Nabil Helmy\\.nuget\\packages\\",
-      "outputPath": "E:\\YOUTUBE\\projects\\Repo\\obj\\",
+      "outputPath": "E:\\YOUTUBE\\projects\\Repo\\Repositortypattern-and-AJAx\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

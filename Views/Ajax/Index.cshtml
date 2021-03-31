@@ -1,0 +1,29 @@
+﻿@model Repo.ViewModel.CountryCityVM
+<h1 class="jumbotron d-flex justify-content-center">USING JQUERY AJAX IN ASP.NET CORE</h1>
+<div class="container">
+    <label class="col-form-label">Country</label>
+    <select class="form-control country" asp-for="CountryId" asp-items="@(new SelectList(Model.Countries,"Id","Name"))"></select>
+    <label class="col-form-label">City</label>
+    <select class="form-control city"></select>
+
+</div>
+@section Scripts{ 
+
+    <script>
+        $(".country").change(function () {
+            let id = $(".country option:selected").val();
+            $.ajax({
+                url: "/Ajax/GetCities",
+                type: "GET",
+                data: { CountryId: id },
+                success: function(data) {
+                    let items = '';
+                    $.each(data, function (i, city) {
+                        items += '<option value="' + city.value + '">' + city.text + "</option>";
+                    });
+                    $(".city").html(items);
+                }
+            })
+        })
+    </script>
+}
