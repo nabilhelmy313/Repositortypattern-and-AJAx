@@ -31,6 +31,7 @@ namespace Repo
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IRepoProj<Country>, CountryRepo>();
             services.AddScoped<IRepoProj<City>, CityRepo>();
+            services.AddScoped<IRepoProj<User>, UserRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

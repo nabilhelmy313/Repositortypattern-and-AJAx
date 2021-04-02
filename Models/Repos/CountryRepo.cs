@@ -16,6 +16,11 @@ namespace Repo.Models.Repos
             this.conext = conext;
         }
 
+        public void Add(Country add)
+        {
+            throw new NotImplementedException();
+        }
+
         public Country Find(int Id)
         {
             var c = conext.Countries.Find(Id);

@@ -10,6 +10,5 @@ namespace Repo.ViewModel
     {
         public List<Country> Countries{ get; set; }
         public int CountryId { get; set; }
-
     }
 }

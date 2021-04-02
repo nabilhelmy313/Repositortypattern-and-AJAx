@@ -16,6 +16,11 @@ namespace Repo.Models.Repos
             this.conext = conext;
         }
 
+        public void Add(City add)
+        {
+            throw new NotImplementedException();
+        }
+
         public City Find(int Id)
         {
             var c = conext.Cities.Find(Id);
